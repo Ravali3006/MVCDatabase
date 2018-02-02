@@ -1,0 +1,53 @@
+﻿@model MVCDatabase.Models.Customer
+
+@{
+    ViewBag.Title = "Customer Details";
+}
+
+<h2>Customer Details</h2>
+<table class="table table-bordered">
+    <tr>
+        <td>
+<b>CustomerId</b>
+        </td>
+        <td>
+@Model.CustomerId
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>CustomerName</b>
+        </td>
+        <td>
+            @Model.CustomerName
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>CustomerPurchaseAmount</b>
+        </td>
+        <td>
+            @Model.PurchaseAmount
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>CustomerPhone</b>
+        </td>
+        <td>
+            @Model.Phone
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>Customer city</b>
+        </td>
+        <td>
+            @Model.City
+        </td>
+    </tr>
+
+</table>
+
+@Html.ActionLink("Back to List", "Index")
+

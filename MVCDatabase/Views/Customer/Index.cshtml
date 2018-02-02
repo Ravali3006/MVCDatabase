@@ -1,0 +1,16 @@
+﻿@model IEnumerable<MVCDatabase.Models.Customer>
+
+@using MVCDatabase.Models
+@{
+    ViewBag.Title = "Customer List";
+}
+
+<h2>Customer List</h2>
+<ul>
+    @foreach (Customer customer in Model)
+    {
+    <li>
+        @Html.ActionLink(customer.CustomerName, "Details", new { id = customer.CustomerId })
+    </li>
+    }
+</ul>
